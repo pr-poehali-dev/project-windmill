@@ -19,11 +19,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
             >
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Точность
+                Карина
                 <br />
-                в каждом
+                Алматова
                 <br />
-                <span className="text-foreground/40">символе</span>
+                <span className="text-foreground/40">переводчик</span>
               </h2>
             </div>
 
@@ -34,10 +34,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Мы — команда сертифицированных переводчиков-носителей китайского языка с профильной специализацией в бизнесе, праве и технологиях.
+                Профессиональный переводчик с дипломом по специальности «Перевод и переводоведение» ОГУ им. Бондаренко. Специализируюсь на технической, юридической и литературной сферах.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Каждый текст проходит двойную проверку: перевод + редактура нативным специалистом в нужной отрасли.
+                Бережно отношусь к стилю автора и точности терминологии. Обладаю необходимыми квалификациями и сертификатами. Гарантирую внимательное отношение к деталям и соблюдение дедлайнов.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
             Заказать перевод
           </MagneticButton>
           <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(1)}>
-            Наши кейсы
+            Услуги
           </MagneticButton>
         </div>
       </div>
