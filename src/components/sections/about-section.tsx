@@ -10,7 +10,22 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
       className="flex h-screen w-screen shrink-0 snap-start items-center px-4 pt-20 md:px-12 md:pt-0 lg:px-16"
     >
       <div className="mx-auto w-full max-w-7xl">
-        <div className="grid gap-8 md:grid-cols-2 md:gap-16 lg:gap-24">
+        <div className="grid gap-8 md:grid-cols-[auto_1fr_1fr] md:gap-12 lg:gap-16">
+          {/* Photo */}
+          <div
+            className={`transition-all duration-700 ${
+              isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
+            }`}
+          >
+            <div className="h-48 w-36 overflow-hidden rounded-2xl md:h-72 md:w-52 lg:h-80 lg:w-60">
+              <img
+                src="https://cdn.poehali.dev/projects/da6476b6-f3b3-48e3-8710-6795a5644991/bucket/8d6ba82b-1950-40a4-98b1-e3585365b41c.jpeg"
+                alt="Карина Алматова"
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
+          </div>
+
           {/* Left side - Story */}
           <div>
             <div
