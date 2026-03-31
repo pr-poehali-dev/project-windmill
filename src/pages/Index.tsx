@@ -1,8 +1,8 @@
 import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
-import { WorkSection } from "@/components/sections/work-section"
 import { ServicesSection } from "@/components/sections/services-section"
+import { CalculatorSection } from "@/components/sections/calculator-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
@@ -226,7 +226,7 @@ export default function Index() {
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Главная", "Кейсы", "Услуги", "О нас", "Контакты"].map((item, index) => (
+          {["Главная", "Услуги", "Калькулятор", "О нас", "Контакты"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -245,7 +245,7 @@ export default function Index() {
         </div>
 
         <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
-          Заказать перевод
+          Контакты
         </MagneticButton>
       </nav>
 
@@ -282,7 +282,7 @@ export default function Index() {
                 Заказать перевод
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
-                Наши услуги
+                Калькулятор
               </MagneticButton>
             </div>
           </div>
@@ -297,8 +297,8 @@ export default function Index() {
           </div>
         </section>
 
-        <WorkSection />
         <ServicesSection />
+        <CalculatorSection scrollToSection={scrollToSection} />
         <AboutSection scrollToSection={scrollToSection} />
         <ContactSection />
       </div>
